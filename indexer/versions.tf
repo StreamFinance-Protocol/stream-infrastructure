@@ -1,6 +1,6 @@
 terraform {
   cloud {
-    organization = "dydxprotocol"
+    organization = "streamprotocol"
 
     workspaces {
       tags = ["indexers"]
