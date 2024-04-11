@@ -1,7 +1,7 @@
 module "metric_ingestor" {
   count = var.enabled ? 1 : 0
 
-  source = "../modules/metric_ingestor"
+  source = "git::https://github.com/StreamFinance-Protocol/stream-infrastructure//modules/metric_ingestor"
 
   environment = var.environment
   name        = "metric-ingestor"

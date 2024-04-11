@@ -1,7 +1,7 @@
 # Module for ECS task and task execution roles
 module "iam_service_ecs_task_roles" {
   for_each    = local.service_names
-  source      = "../modules/iam/ecs_task_roles"
+  source      = "git::https://github.com/StreamFinance-Protocol/stream-infrastructure//modules/iam/ecs_task_roles"
   name        = "${var.indexers[var.region].name}-${each.key}"
   environment = var.environment
   additional_task_role_policies = flatten(
@@ -18,7 +18,7 @@ module "iam_service_ecs_task_roles" {
 // Legacy, delete after all environments have been migrated to using per task ECS roles.
 // Needed as existing running ECS tasks depend on this ECS role.
 module "iam_ecs_task_roles" {
-  source                        = "../modules/iam/ecs_task_roles"
+  source                        = "git::https://github.com/StreamFinance-Protocol/stream-infrastructure//modules/iam/ecs_task_roles"
   name                          = var.indexers[var.region].name
   environment                   = var.environment
   additional_task_role_policies = local.indexer_ecs_task_role_policies
