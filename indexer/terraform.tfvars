@@ -40,3 +40,28 @@ full_node_tcp_port_to_health_protocol = {
 }
 # Port 26656 is for Tendermint P2P
 full_node_public_ports = ["26656"]
+
+# TODO variables set by soletty
+bugsnag_release_stage = "development"  # Or "staging", "testnet" depending on your environment
+msk_instance_type = "kafka.m5.large" # second smallest
+rds_db_instance_class = "db.t3.medium"
+rds_db_allocated_storage_gb = 20  # example for 20 GB
+elasticache_redis_node_type = "cache.t4g.small"  # example for a memory-optimized instance
+full_node_container_chain_home = "/mnt/data/.dydx-mainnet-1" # set per node
+snapshot_full_node_container_chain_home = "/mnt/data/snapshots" 
+full_node_key = "WBe0ZiE8OtKr+K3e8ukziCc0DvrXn6t0BdjyZLBH9j2YoMFd8ogeXG21LvF74pZ10NWT36uofTVHgseOysKAFA=="
+full_node_container_p2p_persistent_peers = "17e5e45691f0d01449c84fd4ae87279578cdd7ec"
+full_node_ecr_repository_name = "indexer-full-node"
+snapshot_full_node_ecr_repository_name = "snapshot-indexer-full-node"
+full_node_ecs_task_memory = 4096  # Amount in MiB
+full_node_ec2_instance_type = "c7i.8xlarge"
+full_node_tendermint_log_level = "info"
+s3_snapshot_bucket = "dydx-snapshots"
+full_node_use_cosmovisor = true
+full_node_use_persistent_docker_volume = true
+datadog_api_key = "placeholder value"
+enable_https = true
+acm_certificate_domain = "placeholder value"
+
+
+
