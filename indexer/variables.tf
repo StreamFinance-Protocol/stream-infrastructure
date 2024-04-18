@@ -381,7 +381,7 @@ variable "datadog_app_key" {
 variable "datadog_api_url" {
   type        = string
   description = "The datadog api url"
-  default     = "https://api.datadoghq.com/"
+  default     =  "https://us5.datadoghq.com/"
 }
 
 variable "indexer_level_geoblocking" {

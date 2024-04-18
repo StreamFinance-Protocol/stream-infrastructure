@@ -59,7 +59,8 @@ full_node_tendermint_log_level = "info"
 s3_snapshot_bucket = "dydx-snapshots"
 full_node_use_cosmovisor = true
 full_node_use_persistent_docker_volume = true
-datadog_api_key = "placeholder value"
+datadog_api_key = "put this value in terraform cloud"
+datadog_app_key = "put this value in terraform cloud"
 enable_https = true
 acm_certificate_domain = "placeholder value"
 
