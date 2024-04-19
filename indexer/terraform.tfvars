@@ -50,7 +50,7 @@ elasticache_redis_node_type = "cache.t4g.small"  # example for a memory-optimize
 full_node_container_chain_home = "/mnt/data/.dydx-mainnet-1" # set per node
 snapshot_full_node_container_chain_home = "/mnt/data/snapshots" 
 full_node_key = "WBe0ZiE8OtKr+K3e8ukziCc0DvrXn6t0BdjyZLBH9j2YoMFd8ogeXG21LvF74pZ10NWT36uofTVHgseOysKAFA=="
-full_node_container_p2p_persistent_peers = "17e5e45691f0d01449c84fd4ae87279578cdd7ec"
+full_node_container_p2p_persistent_peers = ["17e5e45691f0d01449c84fd4ae87279578cdd7ec@172.17.0.2:26656"]
 full_node_ecr_repository_name = "indexer-full-node"
 snapshot_full_node_ecr_repository_name = "snapshot-indexer-full-node"
 full_node_ecs_task_memory = 4096  # Amount in MiB
