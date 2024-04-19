@@ -63,7 +63,6 @@ full_node_use_persistent_docker_volume = true
 datadog_api_key = "put this value in terraform cloud"
 datadog_app_key = "put this value in terraform cloud"
 enable_https = true
-acm_certificate_domain = "placeholder value"
-
+acm_certificate_domain = "streamprotocol.money"
 
 
