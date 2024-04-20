@@ -64,5 +64,3 @@ datadog_api_key = "put this value in terraform cloud"
 datadog_app_key = "put this value in terraform cloud"
 enable_https = true
 acm_certificate_domain = "streamprotocol.money"
-
-
