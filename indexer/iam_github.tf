@@ -1,5 +1,5 @@
 module "iam_github_actions" {
-  source      = "git::https://github.com/StreamFinance-Protocol/stream-infrastructure//modules/iam/github_actions_role"
+  source      = "../modules/iam/github_actions_role"
   name        = var.indexers[var.region].name
   environment = var.environment
   ecr_repository_arns = concat(

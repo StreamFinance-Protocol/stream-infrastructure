@@ -1,5 +1,5 @@
 module "full_node_ap_northeast_1" {
-  source = "git::https://github.com/StreamFinance-Protocol/stream-infrastructure//modules/validator"
+  source = "../modules/validator"
 
   environment = var.environment
 

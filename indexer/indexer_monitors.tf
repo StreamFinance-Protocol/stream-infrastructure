@@ -1,7 +1,7 @@
 module "indexer_monitors" {
   count = var.enable_monitoring ? 1 : 0
 
-  source                        = "git::https://github.com/StreamFinance-Protocol/stream-infrastructure//modules/indexer_monitors"
+  source                        = "../modules/indexer_monitors"
   env_tag                       = "v4-${var.environment}"
   environment                   = var.environment
   slack_channel                 = var.monitoring_slack_channel

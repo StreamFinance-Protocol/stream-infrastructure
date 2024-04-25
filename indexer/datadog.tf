@@ -1,5 +1,5 @@
 module "datadog_agent" {
-  source = "git::https://github.com/StreamFinance-Protocol/stream-infrastructure//modules/datadog_agent"
+  source = "../modules/datadog_agent"
 
   env             = var.environment
   datadog_api_key = var.datadog_api_key
@@ -13,7 +13,7 @@ module "datadog_agent" {
 }
 
 module "datadog_log_forwarder_indexer_services" {
-  source   = "git::https://github.com/StreamFinance-Protocol/stream-infrastructure//modules/datadog_agent/log_forwarder"
+  source   = "../modules/datadog_agent/log_forwarder"
   for_each = local.services
 
   environment     = var.environment
@@ -25,7 +25,7 @@ module "datadog_log_forwarder_indexer_services" {
 }
 
 module "datadog_log_fowarder_indexer_lambda_services" {
-  source   = "git::https://github.com/StreamFinance-Protocol/stream-infrastructure//modules/datadog_agent/log_forwarder"
+  source   = "../modules/datadog_agent/log_forwarder"
   for_each = local.lambda_services
 
   environment     = var.environment
